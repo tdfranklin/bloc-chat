@@ -1,0 +1,33 @@
+.left-bar {
+    background-image: url(../assets/images/bg2.jpg);
+    /*background-repeat: no-repeat;
+    background-attachment: fixed;*/
+    background-position: center center;
+    background-size: cover;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+}
+
+.jumbotron {
+    background-color: transparent;
+    border: 1px solid gray;
+}
+
+.fix-it {
+    position: absolute;
+    left: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.my-text {
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 40px;
+    color: white;
+}

@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='blocChat'>
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bloc Chat</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/main.css">    
 </head>
 <body>
-    <!-- Angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <!-- AngularFire -->
-    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-    <!-- Firebase -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-lg-2 left-bar">                 
+                <div class="jumbotron">
+                    <div class="container-fluid fix-it">                    
+                        <h2 class="my-text">BlocChat</h2>
+                    </div>
+                </div>
+                <p class="my-text">Room 1</p>
+                <p class="my-text">Room 2</p>
+                <p class="my-text">Room 3</p>
+            </div>
+            <div class="col-md-9 col-lg-10">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+
     <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
     <script>
         // Initialize Firebase
@@ -26,6 +41,10 @@
         };
         firebase.initializeApp(config);
     </script>
+    <!-- Angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <!-- AngularFire -->
+    <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
     <script src="/scripts/app.js"></script>
 </body>
