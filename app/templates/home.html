@@ -1,0 +1,21 @@
+<div>
+    <h1 class="my-text">This is the Home Page - please select a chat room!</h1>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-lg-2 left-bar">                 
+            <div class="jumbotron">
+                <div class="container-fluid fix-it">                    
+                    <h2 class="my-text">BlocChat</h2>
+                </div>
+            </div>
+            <div ng-repeat="room in room.roomlist">
+                <p class="my-text">{{ room.$id }}</p>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 right-bar">
+            <h1 class="my-text my-text-home">This is the Home Page: <br>Please select a chat room!</h1>
+        </div>
+    </div>
+</div>
