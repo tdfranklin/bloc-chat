@@ -1,16 +1,16 @@
 (function() {
     function config($stateProvider, $locationProvider) {
         $locationProvider
-            .html5mode({
+            .html5Mode({
                 enabled: true,
                 requireBase: false
             });
 
         $stateProvider
-            .state('', {
+            .state('home', {
                 url: '/',
-                controller: 'XCtrl as X',
-                templateUrl: '/path'
+                controller: 'RoomCtrl as room',
+                templateUrl: '/templates/home.html'
             });
     }
 
