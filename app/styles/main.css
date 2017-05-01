@@ -49,6 +49,10 @@ p.my-text {
     text-align: center;
 }
 
+.my-text2 {
+    text-shadow: 2px 2px black;
+}
+
 .my-text-home {
     position: relative;
     top: 60%;
@@ -56,4 +60,63 @@ p.my-text {
     height: 30%;
     width: 50%;
     margin: -15% 0 0 -25%;
+}
+
+.my-btn {        
+    margin-bottom: 20px;
+    background: transparent;
+    border: 1px solid gray;
+    color: white;
+}
+
+.my-btn2 {
+    background: transparent;
+    border: 1px solid black;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+.my-icon {
+    padding-left: 10%;
+    font-size: 15px;
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+.modal {
+  text-align: center;
+  padding: 0!important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.modal-header {
+    background-color: lightgray;
+    border: none;
+}
+
+.modal-title {
+    background-color: lightgray;
+}
+
+.modal-body {
+    background-color: lightgray;
+}
+
+.modal-footer {
+    background-color: lightgray;
+    border: none;
+    padding-right: 35%;
 }
