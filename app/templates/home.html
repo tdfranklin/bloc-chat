@@ -10,8 +10,13 @@
                     <h2 class="my-text">BlocChat</h2>
                 </div>
             </div>
-            <div ng-repeat="room in room.roomlist">
-                <p class="my-text">{{ room.$id }}</p>
+            <div class="text-center">
+                <button type="button" class="btn btn-lg my-btn" ng-click="room.openModal()">Add Room</button>
+            </div>
+            <div ng-repeat="r in room.roomlist">
+                <p class="my-text">{{ r.roomName }}
+                <span class="glyphicon glyphicon-minus my-icon" ng-click="room.deleteRoom(r.$id)">
+                </span></p>
             </div>
         </div>
         <div class="col-md-9 col-lg-10 right-bar">

@@ -7,25 +7,6 @@
     <link rel="stylesheet" href="/styles/main.css">    
 </head>
 <body>
-<!--
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 col-lg-2 left-bar">                 
-                <div class="jumbotron">
-                    <div class="container-fluid fix-it">                    
-                        <h2 class="my-text">BlocChat</h2>
-                    </div>
-                </div>
-                <p class="my-text">Room 1</p>
-                <p class="my-text">Room 2</p>
-                <p class="my-text">Room 3</p>
-            </div>
-            <div class="col-md-9 col-lg-10 right-bar">
-                <ui-view></ui-view>
-            </div>
-        </div>
-    </div>
--->
 
 <ui-view></ui-view>
 
@@ -50,8 +31,11 @@
     <!-- AngularFire -->
     <script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/room.js"></script>
+    <script src="/scripts/services/modal.js"></script>
     <script src="/scripts/controllers/RoomCtrl.js"></script>
+    <script src="/scripts/controllers/ModalCtrl.js"></script>
 </body>
 </html>
