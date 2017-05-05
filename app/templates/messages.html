@@ -1,0 +1,8 @@
+<div class="container text-center">
+    <h1 class="my-text">{{currentRoom.roomName}}</h1>
+</div>
+
+<div ng-repeat="message in messages">
+    <h3 class="my-text my-text2">{{ message.username }}:</h3>
+    <p class="my-text3">{{ message.content }}</p>
+</div>

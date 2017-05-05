@@ -11,6 +11,11 @@
                 url: '/',
                 controller: 'RoomCtrl as room',
                 templateUrl: '/templates/home.html'
+            })
+            .state('messages', {
+                url: '/messages',
+                controller: 'RoomCtrl as room',
+                templateUrl: '/templates/messages.html'
             });
     }
 

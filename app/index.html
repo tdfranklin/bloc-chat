@@ -8,7 +8,29 @@
 </head>
 <body>
 
-<ui-view></ui-view>
+<div class="container" ng-controller="RoomCtrl as room">
+    <div class="row">
+        <div class="col-md-3 col-lg-2 left-bar">                 
+            <div class="jumbotron">
+                <div class="container-fluid fix-it">                    
+                    <h2 class="my-text">BlocChat</h2>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-lg my-btn" ng-click="room.openModal()">Add Room</button>
+            </div>
+            <div ng-repeat="r in room.roomlist">
+                <a ng-click="room.activateRoom(r)" ui-sref="messages" class="my-text">{{ r.roomName }}
+                <span class="glyphicon glyphicon-minus my-icon" ng-click="room.deleteRoom(r.$id)">
+                </span></a>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 right-bar">
+            <ui-view></ui-view>
+        </div>
+    </div>
+</div>
+
 
 
 
@@ -35,6 +57,7 @@
     <script src="/scripts/app.js"></script>
     <script src="/scripts/services/room.js"></script>
     <script src="/scripts/services/modal.js"></script>
+    <script src="/scripts/services/message.js"></script>
     <script src="/scripts/controllers/RoomCtrl.js"></script>
     <script src="/scripts/controllers/ModalCtrl.js"></script>
 </body>

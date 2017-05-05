@@ -44,13 +44,27 @@
     color: white;
 }
 
-p.my-text {
+a.my-text {
     font-size: 30px;
     text-align: center;
+    text-decoration: none;
+}
+
+a.my-text:hover {
+    text-shadow: 2px 2px gray;
+    color: white;
 }
 
 .my-text2 {
     text-shadow: 2px 2px black;
+}
+
+.my-text3 {
+    font-family: 'Garamond', 'Times New Roman', Times, serif;
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    text-shadow: 0.5px 0.5px yellow;
 }
 
 .my-text-home {
