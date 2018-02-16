@@ -1,5 +1,5 @@
 (function() {
-    function RoomCtrl(Room, Modal, Message, $scope) {
+    function RoomCtrl(Room, Modal, Message, $scope, $cookies, $filter) {
         var room = this;
         room.roomlist = Room.all;
         room.room = Room;
@@ -18,9 +18,22 @@
         room.deleteRoom = function(id) {            
             room.room.remove(id);
         };
+
+        room.sendMessage = function(newMessage) {
+            var currentUser = $cookies.get('blocChatCurrentUser');
+            var currentRoom = $scope.currentRoom.$id;
+            var newData = {
+                content: newMessage,
+                roomId: currentRoom,
+                sentAt: $filter('date')(new Date(), 'short'),
+                username: currentUser                
+            };            
+            Message.send(newData);
+            $scope.newMessage = '';
+        };
     }
 
     angular
         .module('blocChat')
-        .controller('RoomCtrl', ['Room', 'Modal', 'Message', '$scope', RoomCtrl]);
+        .controller('RoomCtrl', ['Room', 'Modal', 'Message', '$scope', '$cookies', '$filter', RoomCtrl]);
 })();

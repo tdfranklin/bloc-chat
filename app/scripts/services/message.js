@@ -9,6 +9,11 @@
                 return messages;
         };
 
+        Message.send = function(newMessage) {
+            var list = $firebaseArray(ref);
+            list.$add(newMessage);
+        };
+
         return Message;
     }
 

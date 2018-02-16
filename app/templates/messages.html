@@ -4,5 +4,15 @@
 
 <div ng-repeat="message in messages">
     <h3 class="my-text my-text2">{{ message.username }}:</h3>
-    <p class="my-text3">{{ message.content }}</p>
+    <table class="my-table">
+        <td><p class="my-text3">{{ message.content }}</p></td>
+        <td><p class="my-text3 time-sent">{{ message.sentAt }}</p></td>
+    </table>
+</div>
+
+<div class="input-group input-group-lg my-div">
+  <span class="input-group-btn">
+    <button class="btn my-btn2" type="button" ng-click="room.sendMessage(newMessage)">Enter</button>
+  </span>
+  <input type="text" class="form-control my-input" placeholder="Type Text" ng-model="newMessage">
 </div>
